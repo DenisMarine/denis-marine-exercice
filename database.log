@@ -1,0 +1,20 @@
+1730816569871|4|statement|select * from information_schema.sequences
+1730816569909|0|statement|select * from "public"."projet" where 1=0
+1730816569917|0|statement|select * from "public"."users" where 1=0
+1730816569934|0|statement|select * from "public"."projet" where 1=0
+1730816569938|0|statement|select * from "public"."users" where 1=0
+1730816658275|3|statement|select p1_0.projet_id,p1_0.description,p1_0.name,t1_0.projet_id,t1_0.task_id,t1_0.status,t1_0.title,u1_0.users_id,u1_0.email,u1_0.name from projet p1_0 left join task t1_0 on p1_0.projet_id=t1_0.projet_id left join users u1_0 on u1_0.users_id=t1_0.users_id where p1_0.projet_id=1
+1730816658307|3|statement|insert into projet (description,name) values ('desc','name')
+1730816658328|2|statement|select t1_0.task_id,p1_0.projet_id,p1_0.description,p1_0.name,u1_0.projet_id,u1_1.users_id,u1_1.email,u1_1.name,t2_0.task_id,t2_0.projet_id,t2_0.status,t2_0.title,t1_0.status,t1_0.title,u2_0.users_id,u2_0.email,u2_0.name from task t1_0 left join projet p1_0 on p1_0.projet_id=t1_0.projet_id left join users_projet u1_0 on p1_0.projet_id=u1_0.projet_id left join users u1_1 on u1_1.users_id=u1_0.users_id left join task t2_0 on u1_1.users_id=t2_0.users_id left join users u2_0 on u2_0.users_id=t1_0.users_id where t1_0.task_id=1
+1730816658333|2|statement|insert into task (projet_id,status,title,users_id) values (1,'PENDING','title',NULL)
+1730816658339|2|statement|select t1_0.task_id,p1_0.projet_id,p1_0.description,p1_0.name,u1_0.projet_id,u1_1.users_id,u1_1.email,u1_1.name,t2_0.task_id,t2_0.projet_id,t2_0.status,t2_0.title,t1_0.status,t1_0.title,u2_0.users_id,u2_0.email,u2_0.name from task t1_0 left join projet p1_0 on p1_0.projet_id=t1_0.projet_id left join users_projet u1_0 on p1_0.projet_id=u1_0.projet_id left join users u1_1 on u1_1.users_id=u1_0.users_id left join task t2_0 on u1_1.users_id=t2_0.users_id left join users u2_0 on u2_0.users_id=t1_0.users_id where t1_0.task_id=2
+1730816658344|1|statement|insert into task (projet_id,status,title,users_id) values (1,'COMPLETED','title2',NULL)
+1730816658400|3|commit|
+1730816683967|1|statement|select p1_0.projet_id,p1_0.description,p1_0.name,t1_0.projet_id,t1_0.task_id,t1_0.status,t1_0.title,u1_0.users_id,u1_0.email,u1_0.name from projet p1_0 left join task t1_0 on p1_0.projet_id=t1_0.projet_id left join users u1_0 on u1_0.users_id=t1_0.users_id where p1_0.projet_id=2
+1730816683970|1|statement|insert into projet (description,name) values ('desc2','name2')
+1730816683973|1|statement|select t1_0.task_id,p1_0.projet_id,p1_0.description,p1_0.name,u1_0.projet_id,u1_1.users_id,u1_1.email,u1_1.name,t2_0.task_id,t2_0.projet_id,t2_0.status,t2_0.title,t1_0.status,t1_0.title,u2_0.users_id,u2_0.email,u2_0.name from task t1_0 left join projet p1_0 on p1_0.projet_id=t1_0.projet_id left join users_projet u1_0 on p1_0.projet_id=u1_0.projet_id left join users u1_1 on u1_1.users_id=u1_0.users_id left join task t2_0 on u1_1.users_id=t2_0.users_id left join users u2_0 on u2_0.users_id=t1_0.users_id where t1_0.task_id=3
+1730816683976|1|statement|insert into task (projet_id,status,title,users_id) values (2,'PENDING','title3',NULL)
+1730816683979|1|statement|select t1_0.task_id,p1_0.projet_id,p1_0.description,p1_0.name,u1_0.projet_id,u1_1.users_id,u1_1.email,u1_1.name,t2_0.task_id,t2_0.projet_id,t2_0.status,t2_0.title,t1_0.status,t1_0.title,u2_0.users_id,u2_0.email,u2_0.name from task t1_0 left join projet p1_0 on p1_0.projet_id=t1_0.projet_id left join users_projet u1_0 on p1_0.projet_id=u1_0.projet_id left join users u1_1 on u1_1.users_id=u1_0.users_id left join task t2_0 on u1_1.users_id=t2_0.users_id left join users u2_0 on u2_0.users_id=t1_0.users_id where t1_0.task_id=4
+1730816683981|1|statement|insert into task (projet_id,status,title,users_id) values (2,'COMPLETED','title4',NULL)
+1730816683990|7|commit|
+1730816688876|1|statement|select p1_0.projet_id,p1_0.description,p1_0.name,t1_0.projet_id,t1_0.task_id,t1_0.status,t1_0.title,t1_0.users_id from projet p1_0 left join task t1_0 on p1_0.projet_id=t1_0.projet_id
